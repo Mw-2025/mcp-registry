@@ -1,0 +1,33 @@
+name: bankchainai-theblocksofthefuture
+image: mcp/bankchainai-theblocksofthefuture
+type: server
+meta:
+  category: blockchain
+  tags:
+    - blockchain
+    - ai
+    - finance
+about:
+  title: BankChainAI - The Blocks of the Future
+  description: AI-powered blockchain analysis and integration MCP server for the future of decentralized finance
+  icon: https://avatars.githubusercontent.com/u/1?s=200&v=4
+source:
+  project: https://github.com/theblocksofthefuture/bankchainai
+config:
+  description: Configure the connection to BankChainAI
+  secrets:
+    - name: bankchainai-theblocksofthefuture.api_key
+      env: BANKCHAINAI_API_KEY
+      example: YOUR_API_KEY_HERE
+  env:
+    - name: BANKCHAINAI_ENDPOINT
+      example: https://api.bankchainai.com
+      value: '{{bankchainai-theblocksofthefuture.endpoint}}'
+  parameters:
+    type: object
+    properties:
+      endpoint:
+        type: string
+        default: https://api.bankchainai.com
+    required:
+      - endpoint

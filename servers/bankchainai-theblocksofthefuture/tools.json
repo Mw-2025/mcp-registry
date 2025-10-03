@@ -1,0 +1,108 @@
+[
+  {
+    "name": "analyze_blockchain",
+    "description": "Analyze blockchain transactions and patterns using AI",
+    "arguments": [
+      {
+        "name": "chain",
+        "type": "string",
+        "desc": "The blockchain to analyze (e.g., ethereum, bitcoin, polygon)"
+      },
+      {
+        "name": "address",
+        "type": "string",
+        "desc": "Optional wallet or contract address to focus analysis on"
+      },
+      {
+        "name": "timeframe",
+        "type": "string",
+        "desc": "Time period for analysis (e.g., 24h, 7d, 30d)"
+      }
+    ]
+  },
+  {
+    "name": "get_smart_contract_info",
+    "description": "Retrieve information about a smart contract",
+    "arguments": [
+      {
+        "name": "contract_address",
+        "type": "string",
+        "desc": "The smart contract address"
+      },
+      {
+        "name": "chain",
+        "type": "string",
+        "desc": "The blockchain network"
+      }
+    ]
+  },
+  {
+    "name": "monitor_wallet",
+    "description": "Monitor a wallet address for new transactions",
+    "arguments": [
+      {
+        "name": "wallet_address",
+        "type": "string",
+        "desc": "The wallet address to monitor"
+      },
+      {
+        "name": "chain",
+        "type": "string",
+        "desc": "The blockchain network"
+      },
+      {
+        "name": "alert_threshold",
+        "type": "number",
+        "desc": "Minimum transaction value to trigger alerts"
+      }
+    ]
+  },
+  {
+    "name": "query_defi_protocol",
+    "description": "Query information from DeFi protocols",
+    "arguments": [
+      {
+        "name": "protocol",
+        "type": "string",
+        "desc": "The DeFi protocol name (e.g., uniswap, aave, compound)"
+      },
+      {
+        "name": "query_type",
+        "type": "string",
+        "desc": "Type of information to retrieve (e.g., liquidity, rates, volume)"
+      }
+    ]
+  },
+  {
+    "name": "get_transaction_details",
+    "description": "Get detailed information about a specific transaction",
+    "arguments": [
+      {
+        "name": "transaction_hash",
+        "type": "string",
+        "desc": "The transaction hash"
+      },
+      {
+        "name": "chain",
+        "type": "string",
+        "desc": "The blockchain network"
+      }
+    ]
+  },
+  {
+    "name": "ai_blockchain_insights",
+    "description": "Get AI-powered insights on blockchain trends and patterns",
+    "arguments": [
+      {
+        "name": "topic",
+        "type": "string",
+        "desc": "The topic or area of interest (e.g., NFTs, DeFi, gas fees)"
+      },
+      {
+        "name": "chain",
+        "type": "string",
+        "desc": "Optional specific blockchain to focus on"
+      }
+    ]
+  }
+]
